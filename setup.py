@@ -24,7 +24,7 @@ plugin_description = """A simple tool to move the extruder"""
 plugin_author = "Michael Stiemke"
 
 # The plugin's author's mail address.
-plugin_author_email = "51046875+FanDjango@users.noreply.github.com"
+plugin_author_email = "FanDjango@ansynova.com"
 
 # The plugin's homepage URL. Can be overwritten within OctoPrint's internal data via __plugin_url__ in the plugin module
 plugin_url = "https://github.com/FanDjango/OctoPrint-Exercise"
