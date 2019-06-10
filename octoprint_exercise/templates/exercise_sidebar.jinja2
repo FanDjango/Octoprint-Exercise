@@ -1,0 +1,24 @@
+<div class="settings">
+  <label for="exercise_commands">
+    <i class="icon icon-info-sign"
+       title="GCODE commands to send to printer"
+       data-toggle="tooltip">
+    </i>GCODE Commands
+  </label>
+  <textarea class="input-block-level"
+            id="exercise_commands"
+            rows="4"
+            data-bind="value: commands, enable: movementEnabled()">
+  </textarea>
+
+  <label class="control-label">Repetitions</label>
+  <input type="number"
+         class="input-mini text-right"
+         data-bind="value: repetitions, enable: movementEnabled()">
+  <span class="add-on">(count, >0)</span>
+</div>
+
+
+<div class="button">
+  GO! <button id="go" class="btn" data-bind="click: function() {goPrint()}, enable: movementEnabled()"/>
+</div>

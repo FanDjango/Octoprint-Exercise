@@ -1,0 +1,29 @@
+<form class="form-horizontal">
+
+  <div class="control-group">
+    <label for="exercise_commands">
+      <i class="icon icon-info-sign"
+         title="GCODE commands to send to printer"
+         data-toggle="tooltip">
+      </i>
+       GCODE Commands
+    </label>
+    <textarea class="input-block-level"
+              id="exercise_commands"
+              rows="4"
+              data-bind="value: settings.plugins.exercise.commands">
+    </textarea>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label">{{ _('Repetitions') }}</label>
+    <div class="controls input-append">
+      <input type="number"
+             class="input-block-level"
+             data-bind="value: settings.plugins.exercise.repetitions">
+      <span class="add-on">(count, >0)</span>
+    </div>
+  </div>
+
+
+</form>
